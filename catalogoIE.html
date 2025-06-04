@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-book</title>
+
+    <link rel="stylesheet" href="css/styleCat.css" />
+
+    <!-- Lightense.js -->
+    <script src="https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+
+    <script>
+      const ruta = "css/images/catinsumos/";
+      const imagenes = [
+        `${ruta}catie1.jpg`,
+        `${ruta}catie2.jpg`,
+        `${ruta}catie3.jpg`,
+        `${ruta}catie4.jpg`,
+      ];
+    </script>
+
+    <script src="./js/catalogo.js" defer></script>
+  </head>
+  <body>
+    <div class="box">
+      <button id="prev-btn">
+        <img src="css/images/iconsComponents/flechaL.png" alt="" />
+      </button>
+
+      <div id="book" class="book"></div>
+
+      <button id="next-btn">
+        <img src="css/images/iconsComponents/flechaR.png" alt="" />
+      </button>
+    </div>
+  </body>
+</html>

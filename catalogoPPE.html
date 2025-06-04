@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-book</title>
+    <!-- Lightense.js -->
+    <script src="https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+
+    <link rel="stylesheet" href="css/styleCat.css" />
+
+    <!-- <link
+      rel="preload"
+      href="css/images/catPIyS/CatPIySpage-0001.webp"
+      as="image"
+    /> -->
+
+    <script>
+      const ruta = "css/images/catPPE/";
+      const totalPages = 13;
+      const imagenes = Array.from({ length: totalPages }, (_, i) => {
+        const pageNumber = String(i + 1); // 0001, 0002, ..., 0016
+        return `${ruta}catPPE${pageNumber}.webp`;
+      });
+    </script>
+
+    <script src="./js/catalogo.js" defer></script>
+  </head>
+  <body>
+    <div class="box">
+      <button id="prev-btn">
+        <img src="css/images/iconsComponents/flechaL.png" alt="" />
+      </button>
+
+      <div id="book" class="book"></div>
+
+      <button id="next-btn">
+        <img src="css/images/iconsComponents/flechaR.png" alt="" />
+      </button>
+    </div>
+  </body>
+</html>
