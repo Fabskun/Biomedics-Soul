@@ -27,6 +27,10 @@
 
 <body>
 
+        <!-- modal -->
+
+        <div id="contenedor-modal"></div>
+
     <div id="visor" style="margin-top: 20px;">
         <!-- Aquí se mostrará el PDF -->
       </div>
@@ -40,7 +44,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="img/images/isotipo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__btn">
@@ -95,21 +99,21 @@
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Inicio</a></li>
-                                <li><a href="./about.html">Nosotros</a></li>
+                                <li><a href="./about.html">Acerca de</a></li>
                                 <li><a href="./services.html">Servicios</a></li>
                                 <li><a href="#">Productos</a>
                                     <ul class="dropdown">
                                         <li><a href="./pricing.html">Catálogos</a></li>
-                                        <li><a href="./doctor.html">Doctores</a></li>
+                                        <!-- <li><a href="./doctor.html">Doctores</a></li> -->
                                         <li><a href="./blog-details.html">Blog Detalles</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Noticias</a></li>
+                                <!-- <li><a href="./blog.html">Noticias</a></li> -->
                                 <li><a href="./contact.html">Conctacto</a></li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="#" class="primary-btn">Agenda cita</a>
+                            <a href="#" class="primary-btn"  onclick="cargarModal()" >Agenda cita</a>
                         </div>
                     </div>
                 </div>
@@ -144,92 +148,92 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="pricing__item">
+                    <div class="pricing__item ">
                         <div class="pricing__item__title">
                             <p></p>
-                            <h3>Catálogo<span>de productos, insumos y servicios</span></h3>
+                            <h3>Productos, insumos y servicios<span></span></h3>
                         </div>
                         <ul>
                             <li>
-                                <h6>CAMPO NO ESTERIL PLASTIFICADO
+                                <!-- <h6>CAMPO NO ESTERIL PLASTIFICADO
                                     UNISEAL 125 PZS</h6>
-                                <span> $238</span>
+                                <span> $238</span> -->
                             </li>
                             <li>
-                                <h6>GUANTES DE NITRILO XCH, CH, M,G
+                                <!-- <h6>GUANTES DE NITRILO XCH, CH, M,G
                                     100 PZS</h6>
-                                <span>$214</span>
+                                <span>$214</span> -->
                             </li>
                             <li>
-                                <h6>GUANTES DE VINILO UNISEAL 100
+                                <!-- <h6>GUANTES DE VINILO UNISEAL 100
                                     PZS</h6>
-                                <span>$210</span>
+                                <span>$210</span> -->
                             </li>
                             <li>
-                                <h6>ESPONJAS CELULOSA CORPORAL 5
+                                <!-- <h6>ESPONJAS CELULOSA CORPORAL 5
                                     PZS</h6>
-                                <span>$108</span>
+                                <span>$108</span> -->
                             </li>
                         </ul>
-                        <a href="#" onclick="window.open('catalogoPIyS.html', '_blank')"  class="primary-btn">ver más</a>
+                        <a href="#" onclick="window.open('catalogoPIyS.html', '_blank')"  class="primary-btn">Catálogo</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="pricing__item">
                         <div class="pricing__item__title">
                             <!-- <p></p> -->
-                            <h3>Catálogo <span> de insumos estéticos</span></h3>
+                            <h3>Insumos estéticos<span> </span></h3>
                         </div>
                         <ul>
                             <li>
-                                <h6>Botox Allergan</h6>
-                                <span>$4060</span>
+                                <!-- <h6>Botox Allergan</h6>
+                                <span>$4060</span> -->
                             </li>
                             <li>
-                                <h6> Toxina Botulinica XEOMEEN</h6>
-                                <span>$4020</span>
+                                <!-- <h6> Toxina Botulinica XEOMEEN</h6>
+                                <span>$4020</span> -->
                             </li>
                             <li>
-                                <h6>Dysport</h6>
-                                <span>$6840</span>
+                                <!-- <h6>Dysport</h6>
+                                <span>$6840</span> -->
                             </li>
                             <li>
-                                <h6>Toxina Botulinica Tipo A BOTULAX</h6>
-                                <span>$1740</span>
+                                <!-- <h6>Toxina Botulinica Tipo A BOTULAX</h6>
+                                <span>$1740</span> -->
                             </li>
                         </ul>
-                        <a href="#" onclick="window.open('catalogoIE.html', '_blank')" class="primary-btn">ver más</a>
+                        <a href="#" onclick="window.open('catalogoIE.html', '_blank')" class="primary-btn">Catálogo</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="pricing__item">
+                    <div class="pricing__item height:200px; " >
                         <div class="pricing__item__title">
                             <!-- <p>FACIAL PROCEDURES</p> -->
-                            <h3>Catálogo <span>de productos para equipos</span></h3>
+                            <h3>Productos para equipos<span></span></h3>
                         </div>
                         <ul>
                             <li>
-                                <h6>Lápiz de
+                                <!-- <h6>Lápiz de
                                     electrocirugía</h6>
-                                <span>Reusable - Desechable</span>
+                                <span>Reusable - Desechable</span> -->
                             </li>
                             <li>
-                                <h6> Placa para electrocirugía
+                                <!-- <h6> Placa para electrocirugía
                                     desechable, con cable REM</h6>
-                                <span>Adulto - Neonatal - Pediátrico</span>
+                                <span>Adulto - Neonatal - Pediátrico</span> -->
                             </li>
                             <li>
-                                <h6> Cable reusable para placa
+                                <!-- <h6> Cable reusable para placa
                                     de electrocirugía</h6>
-                                <span>Conector REM – Conector PLUG</span>
+                                <span>Conector REM – Conector PLUG</span> -->
                             </li>
                             <li>
-                                <h6>Cable para pinza
+                                <!-- <h6>Cable para pinza
                                     bipolar</h6>
-                                <span> Conexión europea - Conexión americana</span>
+                                <span> Conexión europea - Conexión americana</span> -->
                             </li>
                         </ul>
-                        <a onclick="window.open('catalogoPPE.html', '_blank')" class="primary-btn">ver más</a>
+                        <a onclick="window.open('catalogoPPE.html', '_blank')" class="primary-btn">Catálogo</a>
                     </div>
                 </div>
             </div>
@@ -244,7 +248,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <!-- <a href="#"><img src="img/footer-logo.png" alt=""></a> -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8">
@@ -344,6 +348,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/openmodal.js"></script>
+
 
     <!-- <script>
         function mostrarPDF() {

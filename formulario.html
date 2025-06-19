@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulario</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+
+<!-- Consultation Section Begin -->
+<section id="miModal" class="consultation d-flex justify-content-center align-items-center"
+         style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.7); z-index: 999999">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="consultation__form bg-white p-4 rounded shadow">
+                    <div class="section-title text-center mb-4">
+                        <span>SOLICITUD DE SU</span>
+                        <h2>Consulta</h2>
+                    </div>
+                    <form action="#">
+                        <input type="text" placeholder="Nombre" class="form-control mb-3">
+                        <input type="email" placeholder="Correo" class="form-control mb-3">
+                        <div class="datepicker__item position-relative mb-3">
+                            <input type="text" placeholder="Fecha" class="datepicker">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <select class="form-control mb-3">
+                            <option value="">Tipo de servicio</option>
+                            <option>Equipos avanzados</option>
+                            <option>Médicos calificados</option>
+                            <option>Servicios certificados</option>
+                            <option>Atención de emergencia</option>
+                        </select>
+                        <button onclick="cerrarModal()"  type="submit" class="site-btn w-100">Reservar cita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<!-- Consultation Section End -->
+
+  <!-- Js Plugins -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+    
+</body>
+</html>

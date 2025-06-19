@@ -23,9 +23,17 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+   
+
 </head>
 
 <body>
+
+    <!-- modal -->
+
+    <div id="contenedor-modal"></div>
+
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -35,11 +43,11 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="img/images/isotipo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__btn">
-            <a href="#" class="primary-btn">Cita</a>
+            <a href="#consultation" class="primary-btn">Cita</a>
         </div>
         <ul class="offcanvas__widget">
             <li><i class="fa fa-phone"></i> 52+ 634526323</li>
@@ -90,21 +98,22 @@
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Inicio</a></li>
-                                <li><a href="./about.html">Nosotros</a></li>
+                                <li><a href="./about.html">Acerca de</a></li>
                                 <li><a href="./services.html">Servicios</a></li>
                                 <li><a href="#">Productos</a>
                                     <ul class="dropdown">
                                         <li><a href="./pricing.html">Catálogos</a></li>
-                                        <li><a href="./doctor.html">Doctores</a></li>
+                                        <!-- <li><a href="./doctor.html">Doctores</a></li> -->
                                         <li><a href="./blog-details.html">Blog Detalles</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Noticias</a></li>
+                                <!-- <li><a href="./blog.html">Noticias</a></li> -->
                                 <li><a href="./contact.html">Conctacto</a></li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="#" class="primary-btn">Agenda cita</a>
+                            <!-- href="#calledform" -->
+                            <a href="#" class="primary-btn" onclick="cargarModal()">Agenda cita</a>
                         </div>
                     </div>
                 </div>
@@ -121,11 +130,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="hero__text">
+                    <div class="hero__text" id="calledform">
                         <span>Innovacion que salva vidas </span>
                         <h2>BIOMEDICS
                             SOUL </h2>
-                        <a href="#" class="primary-btn normal-btn">Contactanos</a>
+                        <a href="#" class="primary-btn normal-btn" >Contactanos</a>
+
+                        
+
+                        
+
                     </div>
                 </div>
             </div>
@@ -133,12 +147,14 @@
     </section>
     <!-- Hero Section End -->
 
+  
+
     <!-- Consultation Section Begin -->
-    <section class="consultation">
+    <section class="consultation" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="consultation__form">
+                    <div class="consultation__form" > 
                         <div class="section-title">
                             <span>SOLICITUD DE SU</span>
                             <h2>Consulta</h2>
@@ -188,7 +204,7 @@
     <!-- Consultation Section End -->
 
     <!-- Chooseus Section Begin -->
-    <section class="chooseus spad">
+    <section class="chooseus spad" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -235,7 +251,7 @@
 
     <!-- Services Section Begin -->
     <section class="services spad set-bg" data-setbg="img/services-bg.jpg">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-6">
                     <div class="section-title">
@@ -304,7 +320,7 @@
     <!-- Services Section End -->
 
     <!-- Team Section Begin -->
-    <section class="team spad">
+    <!-- <section class="team spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -356,7 +372,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Team Section End -->
 
     <!-- Gallery Begin -->
@@ -386,10 +402,12 @@
             </div>
         </div>
     </div>
+
+
     <!-- Gallery End -->
 
     <!-- Latest News Begin -->
-    <section class="latest spad">
+    <!-- <section class="latest spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-6">
@@ -437,11 +455,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Latest News End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
+    <footer class="footer" >
         <div class="footer__top">
             <div class="container">
                 <div class="row">
@@ -547,6 +565,10 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/openmodal.js"></script>
+
+    
+
 </body>
 
 </html>

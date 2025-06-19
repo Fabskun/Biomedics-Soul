@@ -122,3 +122,4 @@ function goPrevPage() {
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 
+

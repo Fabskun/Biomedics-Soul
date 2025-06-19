@@ -26,6 +26,11 @@
 </head>
 
 <body>
+
+      <!-- modal -->
+
+      <div id="contenedor-modal"></div>
+
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -35,7 +40,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="img/images/isotipo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__btn">
@@ -90,21 +95,21 @@
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Inicio</a></li>
-                                <li><a href="./about.html">Nosotros</a></li>
+                                <li><a href="./about.html">Acerca de</a></li>
                                 <li><a href="./services.html">Servicios</a></li>
                                 <li><a href="#">Productos</a>
                                     <ul class="dropdown">
                                         <li><a href="./pricing.html">Catálogos</a></li>
-                                        <li><a href="./doctor.html">Doctores</a></li>
+                                        <!-- <li><a href="./doctor.html">Doctores</a></li> -->
                                         <li><a href="./blog-details.html">Blog Detalles</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./blog.html">Noticias</a></li>
+                                <!-- <li><a href="./blog.html">Noticias</a></li> -->
                                 <li><a href="./contact.html">Conctacto</a></li>
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="#" class="primary-btn">Agenda cita</a>
+                            <a href="#" class="primary-btn"  onclick="cargarModal()">Agenda cita</a>
                         </div>
                     </div>
                 </div>
@@ -393,6 +398,8 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/openmodal.js"></script>
+
 </body>
 
 </html>
